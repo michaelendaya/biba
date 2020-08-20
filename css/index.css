@@ -1,0 +1,21 @@
+label {
+    width: 250px;
+    margin-right: 10px;
+    margin-left: 25%;
+    text-align: left;
+    float: left;
+}
+.center {
+    margin: auto;
+    width: 90%;
+    padding: 70px 0;
+  }
+  .box {
+    position: relative;
+    left: 24%;
+    }
+     .inputField{
+        width:100px;
+        box-sizing:border-box;
+        width: 250px;
+    }

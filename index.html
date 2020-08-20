@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js">
+
+    </script>
+</head>
+<body>
+  <form name="myForm"  onsubmit="return validateForm()"  required>
+    <div class="center ">
+  <label>  Event Type PARE:</label> <select id="eventType" name="eventType"class="inputField">
+    <option value="" selected disabled hidden>Choose one</option>
+    <option value="conference">Conference</option>
+    <option value="outreach">Outreach</option>
+    <option value="meeting">Meeting</option>
+    <option value="teamBuilding">Team Building</option>
+    <option value="training">Training</option>
+  </select>
+  <br><br>
+
+  <label>Event Title:</label> <input type="text" id="title" class="inputField" required><br><br>
+
+  <label>Event dates: </label>  <input type="date" id="date1" name="date1" class="inputField" required> to   <input type="date" id="date2" name="date2" class="inputField" required><br><br>
+
+  <label>Posting dates: </label>  <input type="date" id="postingDate" name="postingDate" class="inputField"required> <br><br>
+   <div class="box">
+    <input type="checkbox" id="Registration"  name="Registration"/>Is Registration Required? <br><br>
+    <input type="checkbox" id="Family" name="Family"/>Is this event associated with any Family Programs?<br><br>
+    <input type="checkbox" id="Email" name="Email"/>Upon Registration Completion, Are Users to Recieve and Auto Generated Email?<br><br>
+    <input type="checkbox" id="Contact" name="Contact"/>Is There a Point of Contact? <br><br>
+    <input type="checkbox" id="Hosting" name="Hosting"/>Is There a Hosting Command Point of Contact? <br> <br>
+   </div>
+   <br>
+    <center><input type="submit" value="Submit">  <button type="reset" value="Reset">Reset</button></center>
+
+</div>
+</form>
+</body>
+</html>
